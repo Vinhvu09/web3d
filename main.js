@@ -49,11 +49,7 @@ gltfLoader.load("./assets/data/face2.glb", (gltf) => {
 });
 
 const control = new OrbitControls(camera, renderer.domElement);
-control.enableDamping = true;
-control.minDistance = 0;
-control.maxDistance = 100;
-control.enablePan = false;
-control.maxPolarAngle = Math.PI / 2 - 0.05;
+
 control.update();
 
 // ANIMATION
